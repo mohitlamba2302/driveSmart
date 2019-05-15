@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+   <head>
+      <title>{{ title }} </title>
+   </head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+   	$(document).ready(function(){
+   			
+
+   			while(true){
+   			setTimeout(function() {$.getJSON("/vivi",function(data){
+   			 	//console.log(data);
+   			 	$('.op').html(data['value']);
+   			 	console.log((data['value']));
+   			 });}, 2000);
+   			 
+   			}
+   			 // var URL="/Users/siddharth/Desktop/folder/driveSmart/templates/vision.json"
+   			 // $.ajax({
+   			 // 	dataType:"json",
+   			 // 	url:URL,
+   			 // 	success:function(data){
+   			 // 		console.log(data);
+   			 // 	}
+
+   			 // });
+
+   			//var json=require('./vision.json');
+   			//console.log(json);
+
+   		
+
+
+
+   	});
+   	</script>
+   <body>
+   	asdd
+      <h1>Hsadello, Worlehfkadkd!</h1>
+      <h2>The date and time on the server is: {{ time }}</h2>
+      <div class='op'></div>
+   </body>
+   
+</html>

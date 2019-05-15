@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+   <head>
+      <title>{{ title }} </title>
+   </head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+   	$.document({
+   		console.log('hi')
+
+   		while(true){
+
+   			$.getJSON("vision.json",function(json){
+   				console.log(json);
+   			})
+
+   		}
+
+
+
+   	})
+   	</script>
+   <body>
+   	asdd
+      <h1>Hsadello, Worlehfkadkd!</h1>
+      <h2>The date and time on the server is: {{ time }}</h2>
+   </body>
+   
+</html>

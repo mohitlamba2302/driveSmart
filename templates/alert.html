@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+<title>driveSmart ALERT </title>
+<!-- <link rel="stylesheet" type="text/css" href="alert.css"> -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+<style>
+body{
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvU0Knyc8gVop5a4sfME2QhjBxCg5wcvRCxTbT8i6DPmekxwAv1w);
+    height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body, html{
+	height: 100%;
+}
+
+.blinking{
+    animation:blinkingText 0.8s infinite;
+    text-shadow: 2.2px 2.8px red;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+
+.blink {
+      animation: blink 2s steps(5, start) infinite;
+      -webkit-animation: blink 1s steps(5, start) infinite;
+    }
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+
+</style>
+
+
+
+</head>
+
+
+<body>
+   <div class="alert alert-danger">
+  <strong><h4>Alert! </h4></strong><h5>Not safe to drive!</h5>
+</div>
+ <embed name="GoodEnough" src="/static/alert.mp3" loop="true" hidden="true" autostart="true">
+ 	<!-- <audio>
+ 		<source src="/static",filename="alert.mp3" type="mpeg">
+ 		</audio> -->
+<div class="container">
+<div class = "jumbotron">
+<h1><span class="blinking">DANGER!!<br>Please stop driving! </span><i class="fa fa-car blinking" style="color:red"></i></h1>
+<h3> Your body is not fit to drive right now! Please park your vehicle on the side.</h3>
+    
+<i class="fa fa-3x fa-heart blink" style="color:red"></i>                                    
+<i class="fa fa-3x fa-exclamation-triangle blink" style="color:#f4aa42"></i>
+
+</div>
+</div>
+</div>
+</audio>
+</body>
+   
+</html>

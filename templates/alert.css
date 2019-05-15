@@ -1,0 +1,41 @@
+body{
+	background-image: url(https://cdn.pixabay.com/photo/2016/02/06/09/38/hazard-1182704_960_720.jpg);
+	 /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body, html{
+	height: 100%;
+}
+
+.blinking{
+    animation:blinkingText 0.8s infinite;
+    text-shadow: 2.2px 2.8px red;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+
+.blink {
+      animation: blink 2s steps(5, start) infinite;
+      -webkit-animation: blink 1s steps(5, start) infinite;
+    }
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+
